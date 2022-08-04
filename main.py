@@ -32,7 +32,7 @@ while True:
                     thumb_x = screen_width/frame_width*x
                     thumb_y = screen_height/frame_height*y
                     print('outside', abs(index_y - thumb_y))
-                    if abs(index_y - thumb_y) < 40:
+                    if abs(index_y - thumb_y) < 40:     #initiates a click when difference between the thumb and index finger becomes less then 40
                         pyautogui.click()
                         pyautogui.sleep(1)
 
